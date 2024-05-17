@@ -1,0 +1,40 @@
+{
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "[plaintext]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[javascript]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[typescript]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[json]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[jsonc]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[html]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[css]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[scss]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    }
+}

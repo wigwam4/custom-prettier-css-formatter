@@ -1,0 +1,67 @@
+{
+	"name": "custom-prettier---css-formatter",
+	"displayName": "Custom Prettier - CSS Formatter",
+	"description": "Tailor CSS styles flawlessly, enforcing consistency and efficiency.",
+	"version": "1.0.0",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.88.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "custom-prettier---css-formatter.applyStyleOrder",
+				"title": "applyStyleOrder"
+			}
+		],
+		"configuration": {
+			"title": "custom-prettier---css-formatter",
+			"properties": {
+				"cssPrettierType": {
+					"type": "string",
+					"default": "multi",
+					"enum": [
+						"single",
+						"multi",
+						"mixed"
+					],
+					"description": "Define the ordering method of CSS properties: 'single' for one criterion, 'multi' for multiple criteria, or 'mixed' to optionally inserts line breaks to emphasize certain declarations while keeping others concise."
+				},
+				"cssPrettierFormat": {
+					"type": "array",
+					"default": [
+						"property1",
+						"property2"
+					],
+					"description": "Specify the exact order of CSS properties as they should appear in stylesheets."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "yarn run lint",
+		"test": "vscode-test",
+		"format:lock": "prettier --write package-lock.json"
+	},
+	"devDependencies": {
+		"@types/mocha": "^10.0.6",
+		"@types/node": "18.x",
+		"@types/vscode": "^1.88.0",
+		"@vscode/test-cli": "^0.0.8",
+		"@vscode/test-electron": "^2.3.9",
+		"eslint": "^8.57.0",
+		"prettier": "^3.2.5",
+		"typescript": "^5.4.5"
+	},
+	"dependencies": {
+		"jsonc-parser": "^3.2.1"
+	}
+}

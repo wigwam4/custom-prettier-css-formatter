@@ -1,0 +1,57 @@
+{
+	// cssPrettierType: 'single', 'multi', 'mixed'. 값이 없을 경우 자동으로 'multi'가 사용됩니다.
+	// - 'single': 모든 스타일 선언을 한 줄에 배치합니다. 스타일 시트를 간결하게 유지하려는 경우에 적합합니다.
+	// - 'multi': 각 스타일 선언을 새로운 줄에 배치하고, 들여쓰기를 추가하여 시각적 구분을 강화합니다. 복잡한 스타일 블록에 유용합니다.
+	// - 'mixed': 줄바꿈을 선택적으로 삽입하여, 일부 선언은 강조하고 나머지는 간결하게 처리합니다.
+	// cssPrettierFormat: 스타일 정렬 순서를 지정합니다. 지정되지 않은 스타일은 마지막에 배치됩니다. 'mixed' 모드에서 줄바꿈을 위해 '\n'을 추가하세요.
+
+	// cssPrettierType: 'single', 'multi', 'mixed'. Defaults to 'multi' if not specified.
+	// - 'single': Places all style declarations on a single line. Suitable for keeping the stylesheet concise.
+	// - 'multi': Places each style declaration on a new line and adds indentation for visual distinction. Useful for complex style blocks.
+	// - 'mixed': Optionally inserts line breaks to emphasize certain declarations while keeping others concise.
+	// cssPrettierFormat: Specifies the order of style alignment. Styles not specified are placed at the end. Add '\n' in 'mixed' mode for line breaks.
+
+	// Example:
+	"cssPrettierType": "mixed",
+	"cssPrettierFormat": [
+		"display",
+        "overflow",
+        "\n",
+        "float",
+        "clear",
+        "\n",
+        "position",
+        "top",
+        "bottom",
+        "left",
+        "right",
+        "z-index",
+        "\n",
+        "width",
+        "height",
+        "\n",
+        "margin",
+        "padding",
+        "\n",
+        "background",
+        "background-color",
+        "background-image",
+        "background-position",
+        "background-size",
+        "background-repeat",
+        "\n",
+        "border",
+        "\n",
+        "color",
+        "font-size",
+        "font-weight",
+        "line-height",
+        "letter-spacing",
+        "\n",
+        "transform",
+        "\n",
+        "transition",
+        "\n",
+        "animation"
+	]
+}
